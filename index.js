@@ -22,5 +22,5 @@ sequelize.sync({ force: false })
     .catch(err => console.error('Database error:', err))
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`)
+    console.log(`Server running on http://localhost:${PORT} oke`)
 })
