@@ -17,9 +17,9 @@ app.use('/api', recordRoute)
 
 const PORT = process.env.PORT || 3000
 
-// sequelize.sync({ force: false })
-//     .then(() => console.log('Database connected'))
-//     .catch(err => console.error('Database error:', err))
+sequelize.sync({ force: false })
+    .then(() => console.log('Database connected'))
+    .catch(err => console.error('Database error:', err))
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`)
