@@ -2,7 +2,19 @@ import Record from "../model/record.model.js"
 
 export const store = async (req, res) => {
     try {
-        const { lat, lng, gps_id, speed, status, satellite, direction, fuel_consumption } = req.body
+        const { 
+            lat, 
+            lng, 
+            gps_id, 
+            speed, 
+            status, 
+            satellite, 
+            direction, 
+            fuel_consumption, 
+            altitude, 
+            distance, 
+            temperature 
+        } = req.body
 
         const timestamp = moment().tz('Asia/Jakarta').format('YYYY-MM-DD HH:mm:ss')
 
@@ -15,6 +27,9 @@ export const store = async (req, res) => {
             satellite,
             direction,
             fuel_consumption,
+            altitude, 
+            distance, 
+            temperature,
             timestamp
         })
 

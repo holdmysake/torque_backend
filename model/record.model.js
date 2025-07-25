@@ -29,11 +29,11 @@ const Record = sequelize.define('record', {
         allowNull: false
     },
     speed: {
-        type: DataTypes.DOUBLE,
+        type: DataTypes.FLOAT,
         allowNull: true
     },
     fuel_consumption: {
-        type: DataTypes.DOUBLE,
+        type: DataTypes.FLOAT,
         allowNull: true
     },
     satellite: {
@@ -41,7 +41,19 @@ const Record = sequelize.define('record', {
         allowNull: true
     },
     direction: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
+        allowNull: true
+    },
+    altitude: {
+        type: DataTypes.FLOAT,
+        allowNull: true
+    },
+    distance: {
+        type: DataTypes.FLOAT,
+        allowNull: true
+    },
+    temperature: {
+        type: DataTypes.FLOAT,
         allowNull: true
     },
     status: {
